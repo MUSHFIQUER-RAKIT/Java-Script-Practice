@@ -8,14 +8,28 @@
 </head>
 
 <body style="background-color: black; color: white;">
-  <h1 id="demo1"></h1>
-  <h1 id="demo2"></h1>
-  <h1 id="demo3"></h1>
-  <h1 id="demo4"></h1>
-  <h1 id="demo5"></h1>
-  <h1 id="demo6"></h1>
-  <h1 id="demo7"></h1>
-  <button id="btn1" onclick="myfunction()" style="padding: 10px 20px; font-size: 25px;">0</button>
+  <section style="display: flex; justify-content: space-around;">
+    <div>
+      <h1 id="demo1"></h1>
+      <h1 id="demo2"></h1>
+      <h1 id="demo3"></h1>
+      <h1 id="demo4"></h1>
+      <h1 id="demo5"></h1>
+      <h1 id="demo6"></h1>
+      <h1 id="demo7"></h1>
+      <button id="btn1" onclick="myfunction()" style="padding: 10px 20px; font-size: 25px;">0</button>
+      <br>
+      <br>
+      <br>
+      <input type="text" id="fname" oninput="upperCase()">
+    </div>
+
+    <div>
+      <div id="container" style="width: 400px; height: 400px; background-color: yellow; position: relative;">
+        <div id="animate" style="width: 50px; height: 50px; background-color: red; position: absolute;"></div>
+      </div>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
 

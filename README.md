@@ -8,3 +8,7 @@
 6. Nested Array/ Find The Index Whice Roll IS 20 ~~ problem 6
 7. JavaScript Object Prototypes   ~~ problem 7
 8. JavaScript Accessors (Getters and Setters)~~~ problem 8
+9.  A Counter Dilemma~~~ problem 9
+10. JavaScript Closure~~~ problem 10
+11.  JavaScript Callbacks & Asynchronous & promise ~~~ problem 11
+12. JavaScript HTML DOM Animation ~~~ problem 12

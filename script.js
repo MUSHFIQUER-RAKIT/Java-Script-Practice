@@ -153,7 +153,7 @@ profile[repName].name = "ffff";
 
 // delete the object whice Collage is CPi
 const deleteCPi = profile.filter(remove => remove.collage > "Cpi");
-console.log(deleteCPi);
+// console.log(deleteCPi);
 // ~~~~~~~~~~~~~~  JavaScript Object Prototypes   ~~ problem 7
 
 function person(first, last, age, classe) {
@@ -259,7 +259,7 @@ let count = 0;
   // console.log(count);
 })();
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~ JavaScript Callbacks ~~~ problem 11
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ JavaScript Callbacks  & Asynchronous & promise ~~~ problem 11
 const paymentSuccess = true;
 const marks = 80;
 
@@ -294,6 +294,56 @@ function getCertificate() {
     console.log("congrats you got the certificate");
   }, 1000);
 }
-enRoll(function () {
-  progress(getCertificate);
+// enRoll(function () {
+//   progress(getCertificate);
+// });
+
+// ~~~~~~~~ & Asynchronous  ~~~~~~~~~~~~
+// console.log("Task 1");
+const condition = false;
+// promise defination
+
+const promise = new Promise(function (resolve, reject) {
+  setInterval(function () {
+    if (condition) {
+      resolve("Task 2");
+    } else {
+      reject("Failed");
+    }
+  }, 2000);
 });
+
+// promise Called
+
+promise
+  .then(function (value) {
+    console.log(value);
+  })
+  .catch(function (fail) {
+    console.log(fail);
+  });
+
+// console.log("Task 3");
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ JavaScript HTML DOM Animation ~~~ problem 12
+
+function moveDiv() {
+  const element = document.getElementById("animate");
+
+  let pos = 0;
+
+  const interval = setInterval(function () {
+    if (pos < 350) {
+      pos++;
+      element.style.top = pos + "px";
+      element.style.left = pos + "px";
+    } else {
+      clearInterval(interval);
+    }
+  }, 5);
+}
+// moveDiv();
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
